@@ -34,9 +34,18 @@
 			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-2" action="/anonymous/gonzalez-bulletin/create" />
 
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.notice" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-notice" action="/authenticated/notice/list"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>

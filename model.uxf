@@ -330,4 +330,127 @@ CaceresBulletin
 + url: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>738</y>
+      <w>324</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Notice
+--
++ headerPicture: String {NotBlank, URL}
++ title: String {NotBlank}
++ creationMoment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP), NotNull}
++ body: String {NotBlank}
++ links: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>738</y>
+      <w>351</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Inquire
+--
++ title: String {NotBlank}
++ creationDate: Date {Temporal(TIMEATAMP), Past, NotNull}
++ moment: endDate {Temporal(TIMESTAMP), Past}
++ description: String {NotBlank}
++ minMoney: Money {Valid, NotNull}
++ maxMoney: Money {Valid, NotNull}
++ email: String {NotBlank, Email}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>891</y>
+      <w>324</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Overture
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past, NotNull}
++ deadline: Date {Temporal(TIMESTAMP), NotNull}
++ description: String {NotBlank}
++ email: String {Email, NotBlank}
++ minMoney: Money {Valid, NotNull}
++ maxMoney: Money {Valid, NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>909</x>
+      <y>891</y>
+      <w>468</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+TechnologyRecord
+--
++ title: String {NotBlank}
++ activitySector: String {NotBlank}
++ inventorName: String {NotBlank}
++ description: String {NotBlank}
++ webSite: String {URL, NotBlank}
++ email: String {Email, NotBlank}
++ indication: String {NotBlank, Pattern(regexp = "^(open-source|closed-source)$")}
++ stars: Integer {Range(min = -5, max = 5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>1062</y>
+      <w>459</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+ToolRecord
+--
++ title: String {NotBlank}
++ sector: String {NotBlank}
++ inventor: String {NotBlank}
++ description: String {NotBlank}
++ web: String {NotBlank, URL}
++ email: String {Email, NotBlank}
++ indicator: String {NotBlank, Pattern(regexp = "^(open-source|closed-source)$")}
++ stars: Integer {Range(min = -5, max = 5}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>1062</y>
+      <w>297</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenge
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal(TIMESTAMP), NotNull}
++ description: String {NotBlank}
++ rookieGoal: String {NotBlank}
++ rookieReward: Money {Valid, NotNull}
++ averageGoal: String {NotBlank}
++ averageReward: Money {Valid, NotNull}
++ expertGoal: String {NotBlank}
++ expertReward: Money {Valid, NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

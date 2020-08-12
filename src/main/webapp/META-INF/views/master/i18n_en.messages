@@ -42,12 +42,21 @@ master.menu.anonymous.favourite-link-2 = Alejandro´s favourite link
 
 master.menu.anonymous.favourite-link = Favourite link
 
+master.menu.anonymous.notice = Notices
+master.menu.anonymous.list-notice = List notices
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated.notice = Notices
+master.menu.authenticated.list-notice = List notices
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+
+master.menu.administrator.list-notice = List notices
 
 # master.menu.provider ########################################################
 

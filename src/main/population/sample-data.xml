@@ -48,4 +48,24 @@
 		<property name="commentary" value="I found that on YouTube and I like it!" />
 		<property name="moment" value="2019/12/24 17:45" />
 	</bean>
+	
+	<!-- Notices -->
+	
+	<bean id="Notice1" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://www.pinterest.es/pin/413768284513851403/"/>
+		<property name="title" value="Notice 1"/>
+		<property name="creationMoment" value="2020/08/01 20:00"/>
+		<property name="deadline" value="2021/02/01 23:00"/>
+		<property name="body" value="Body Notice 1"/>
+		<property name="links" value=""/>
+	</bean>
+	
+	<bean id="Notice2" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://www.pinterest.es/pin/556194622730273652/"/>
+		<property name="title" value="Notice 2"/>
+		<property name="creationMoment" value="2020/06/01 20:00"/>
+		<property name="deadline" value="2020/07/14 21:30"/>
+		<property name="body" value="Body Notice 2"/>
+		<property name="links" value=""/>
+	</bean>
 	</beans>

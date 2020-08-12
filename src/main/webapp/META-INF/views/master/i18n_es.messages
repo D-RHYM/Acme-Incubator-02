@@ -42,12 +42,22 @@ master.menu.anonymous.favourite-link-2 = Enlace favorito de Alejandro
 
 master.menu.anonymous.favourite-link = Enlace favorito
 
+master.menu.anonymous.notice = Noticias
+master.menu.anonymous.list-notice = Listar noticias
+
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated.notice = Noticias
+master.menu.authenticated.list-notice = Listar noticias
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+
+master.menu.administrator.list-notice = Listar noticias
 
 # master.menu.provider ########################################################
 
