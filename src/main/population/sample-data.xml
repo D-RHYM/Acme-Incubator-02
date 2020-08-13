@@ -152,24 +152,48 @@
 		<property value="Sport" name="title"/>
 		<property value="2021/01/10 00:00" name="deadline"/>
 		<property value="You must play sport 5 hours in a day. If you don´t play 10 days, the expert goal will be failed. If you don´t play for 25 days, the average goal will be failed." name="description"/>		
-		<property value="Rookie goal 1" name="rookieGoal"/>		
+		<property value="You stopped the excercise time for 25 days or more." name="rookieGoal"/>		
 		<property value="100€" name="rookieReward"/>		
-		<property value="Average goal 1" name="averageGoal"/>		
+		<property value="You stopped the excercise time for 10 days or more." name="averageGoal"/>		
 		<property value="500€" name="averageReward"/>		
-		<property value="Expert goal 1" name="expertGoal"/>	
+		<property value="You didn´t stop the excercise." name="expertGoal"/>	
 		<property value="1000€" name="expertReward"/>
 	</bean>
 	
 	<bean id="Challenge02" class="acme.entities.challenges.Challenge">
 		<property value="Reading" name="title"/>
 		<property value="2021/02/01 23:30" name="deadline"/>
-		<property value="You have to read 3 Brandon Sanderson´s books. If you read only 1, you will receive the rookie money. If you read 2, then you will receive the average goal. If you read 3, yo will receive the expert goal." name="description"/>		
-		<property value="Rookie goal 2" name="rookieGoal"/>		
+		<property value="You have to read 3 Brandon Sanderson´s books. If you read only 1, you will receive the rookie money. If you read 2, then you will receive the average goal. If you read 3, you will receive the expert goal." name="description"/>		
+		<property value="Read 1 book." name="rookieGoal"/>		
 		<property value="100€" name="rookieReward"/>		
-		<property value="Average goal 2" name="averageGoal"/>		
+		<property value="Read 2 books." name="averageGoal"/>	
 		<property value="300€" name="averageReward"/>		
-		<property value="Expert goal 2" name="expertGoal"/>	
+		<property value="Read 3 books." name="expertGoal"/>	
 		<property value="600€" name="expertReward"/>
+	</bean>
+	
+	<!-- Tool Records -->
+	
+	<bean id="ToolRecord1" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 1" />
+		<property name="sector" value="Sector 1" />
+		<property name="inventor" value="Alejandro Gonzalez" />
+		<property name="description" value="Tool record from Alejandro Gonzalez" />
+		<property name="web" value="https://www.alegonmar2.com/" />
+		<property name="email" value="alejandro@gmail.com" />
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="2" />
+	</bean>
+	
+	<bean id="ToolRecord2" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 2" />
+		<property name="sector" value="Sector 2" />
+		<property name="inventor" value="David Caceres" />
+		<property name="description" value="Tool record from David Caceres" />
+		<property name="web" value="https://www.davcacrom.com/" />
+		<property name="email" value="davile@gmail.com" />
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="-3" />
 	</bean>
 	
 	</beans>

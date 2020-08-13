@@ -48,6 +48,9 @@ master.menu.anonymous.list-notice = Listar noticias
 master.menu.anonymous.techRecord = Registro de tecnologia
 master.menu.anonymous.list-techRecord = Listar registros de tecnologia
 
+master.menu.anonymous.tool-record = Registro de herramientas
+master.menu.anonymous.list-tool-record = Listar registros de herramientas
+
 
 # master.menu.authenticated ###################################################
 
@@ -65,6 +68,9 @@ master.menu.authenticated.list-inquirie = Listar peticiones
 
 master.menu.authenticated.challenge = Desafios
 master.menu.authenticated.list-challenge = Listar desafios
+
+master.menu.authenticated.tool-record = Registro de herramientas
+master.menu.authenticated.list-tool-record = Listar registros de herramientas
 
 # master.menu.administrator ###################################################
 
