@@ -57,6 +57,9 @@ master.menu.authenticated.list-notice = Listar noticias
 master.menu.authenticated.techRecord = Registro de tecnologia
 master.menu.authenticated.list-techRecord = Listar registros de tecnologia
 
+master.menu.authenticated.overture = Oberturas
+master.menu.authenticated.list-overture = Listar oberturas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

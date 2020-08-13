@@ -56,6 +56,9 @@ master.menu.authenticated.list-notice = List notices
 master.menu.authenticated.techRecord = Technology Records
 master.menu.authenticated.list-techRecord = List Technology Records
 
+master.menu.authenticated.overture = Overtures
+master.menu.authenticated.list-overture = List Overtures
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

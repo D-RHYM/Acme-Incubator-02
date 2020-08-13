@@ -101,4 +101,27 @@
 		<property name="indication" value="open-source"/>
 		<property name="stars" value="5"/>
 	</bean>
+	
+	<!-- Overtures -->
+	
+	<bean id="Overture1" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 1" />
+		<property name="moment" value="2020/04/14 14:00" />
+		<property name="deadline" value="2021/02/10 12:00" />
+		<property name="description" value="Description of Overture 1" />
+		<property name="email" value="overture1@gmail.com" />
+		<property name="minMoney" value="50.0€" />
+		<property name="maxMoney" value="100.0€" />
+	</bean>
+	
+	<bean id="Overture2" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 2" />
+		<property name="moment" value="2019/11/18 15:30" />
+		<property name="deadline" value="2020/12/16 20:00" />
+		<property name="description" value="Description of Overture 2" />
+		<property name="email" value="overture2@gmail.com" />
+		<property name="minMoney" value="500.0€" />
+		<property name="maxMoney" value="1000.0€" />
+	</bean>
+	
 	</beans>
