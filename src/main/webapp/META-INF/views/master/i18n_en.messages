@@ -51,13 +51,16 @@ master.menu.anonymous.list-techRecord = List Technology Record
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated.notice = Notices
-master.menu.authenticated.list-notice = List notices
+master.menu.authenticated.list-notice = List Notices
 
 master.menu.authenticated.techRecord = Technology Records
 master.menu.authenticated.list-techRecord = List Technology Records
 
 master.menu.authenticated.overture = Overtures
 master.menu.authenticated.list-overture = List Overtures
+
+master.menu.authenticated.inquirie = Inquiries
+master.menu.authenticated.list-inquirie = List Inquiries
 
 # master.menu.administrator ###################################################
 

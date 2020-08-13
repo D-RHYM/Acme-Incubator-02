@@ -60,6 +60,9 @@ master.menu.authenticated.list-techRecord = Listar registros de tecnologia
 master.menu.authenticated.overture = Oberturas
 master.menu.authenticated.list-overture = Listar oberturas
 
+master.menu.authenticated.inquirie = Peticiones
+master.menu.authenticated.list-inquirie = Listar peticiones
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

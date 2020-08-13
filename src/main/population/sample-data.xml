@@ -124,4 +124,26 @@
 		<property name="maxMoney" value="1000.0€" />
 	</bean>
 	
+	<!-- Inquires -->
+	
+	<bean id="Inquirie1" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="Coronavirus vaccine"/>
+		<property name="creationDate" value="2020/03/24 10:30"/>
+		<property name="deadline" value="2022/01/01 01:00"/>
+		<property name="description" value="We need the vaccine against Coronavirus to play Volleyball. Help us donating to the cause."/>
+		<property name="minMoney" value="400.00€"/>
+		<property name="maxMoney" value="10000.00€"/>
+		<property name="email" value="alex9951.a@gmail.com"/>
+	</bean>
+	
+	<bean id="Inquirie2" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="Toilet paper"/>
+		<property name="creationDate" value="2020/04/10 13:00"/>
+		<property name="deadline" value="2020/12/01 12:00"/>
+		<property name="description" value="The people is buying toilet paper and is a total chaos, so help donating us to put more in the supermarkets."/>
+		<property name="minMoney" value="50.00€"/>
+		<property name="maxMoney" value="200.00€"/>
+		<property name="email" value="mercadona@gmail.com"/>
+	</bean>
+	
 	</beans>

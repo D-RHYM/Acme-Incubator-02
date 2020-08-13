@@ -32,9 +32,9 @@ public class Inquirie extends DomainEntity {
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@NotNull
 	@Past
-	private Date				creationMoment;
+	@NotNull
+	private Date				creationDate;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull

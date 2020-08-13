@@ -70,7 +70,7 @@
     create table `inquirie` (
        `id` integer not null,
         `version` integer not null,
-        `creation_moment` datetime(6),
+        `creation_date` datetime(6),
         `deadline` datetime(6),
         `description` varchar(255),
         `email` varchar(255),
