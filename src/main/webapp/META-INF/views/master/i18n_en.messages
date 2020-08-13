@@ -42,12 +42,42 @@ master.menu.anonymous.favourite-link-2 = Alejandro´s favourite link
 
 master.menu.anonymous.favourite-link = Favourite link
 
+master.menu.anonymous.notice = Notices
+master.menu.anonymous.list-notice = List notices
+
+master.menu.anonymous.techRecord = Technology Records
+master.menu.anonymous.list-techRecord = List Technology Record
+
+master.menu.anonymous.tool-record = Tool Records
+master.menu.anonymous.list-tool-record = List Tool Record
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated.notice = Notices
+master.menu.authenticated.list-notice = List Notices
+
+master.menu.authenticated.techRecord = Technology Records
+master.menu.authenticated.list-techRecord = List Technology Records
+
+master.menu.authenticated.overture = Overtures
+master.menu.authenticated.list-overture = List Overtures
+
+master.menu.authenticated.inquirie = Inquiries
+master.menu.authenticated.list-inquirie = List Inquiries
+
+master.menu.authenticated.challenge = Challenges
+master.menu.authenticated.list-challenge = List Challenges
+
+master.menu.authenticated.tool-record = Tool Records
+master.menu.authenticated.list-tool-record = List Tool Record
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+
+master.menu.administrator.list-notice = List notices
 
 # master.menu.provider ########################################################
 
