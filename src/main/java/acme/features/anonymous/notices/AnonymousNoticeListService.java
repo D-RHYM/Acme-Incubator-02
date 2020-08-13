@@ -16,6 +16,7 @@ import acme.framework.services.AbstractListService;
 public class AnonymousNoticeListService implements AbstractListService<Anonymous, Notice> {
 
 	// Internal state ------------------------------------------------------------------
+
 	@Autowired
 	AnonymousNoticeRepository repository;
 

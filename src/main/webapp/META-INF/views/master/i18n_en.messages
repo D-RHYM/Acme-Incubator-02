@@ -45,10 +45,16 @@ master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.notice = Notices
 master.menu.anonymous.list-notice = List notices
 
+master.menu.anonymous.techRecord = Technology Records
+master.menu.anonymous.list-techRecord = List Technology Record
+
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated.notice = Notices
 master.menu.authenticated.list-notice = List notices
+
+master.menu.authenticated.techRecord = Technology Records
+master.menu.authenticated.list-techRecord = List Technology Records
 
 # master.menu.administrator ###################################################
 

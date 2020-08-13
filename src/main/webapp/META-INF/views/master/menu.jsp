@@ -39,8 +39,16 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
 		</acme:menu-option>
 		
+		<acme:menu-option code="master.menu.anonymous.techRecord" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.list-techRecord" action="/anonymous/tech-record/list"/>
+		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.authenticated.notice" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-notice" action="/authenticated/notice/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.techRecord" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-techRecord" action="/authenticated/tech-record/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

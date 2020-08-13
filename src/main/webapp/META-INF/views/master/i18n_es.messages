@@ -45,11 +45,17 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.notice = Noticias
 master.menu.anonymous.list-notice = Listar noticias
 
+master.menu.anonymous.techRecord = Registro de tecnologia
+master.menu.anonymous.list-techRecord = Listar registros de tecnologia
+
 
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated.notice = Noticias
 master.menu.authenticated.list-notice = Listar noticias
+
+master.menu.authenticated.techRecord = Registro de tecnologia
+master.menu.authenticated.list-techRecord = Listar registros de tecnologia
 
 # master.menu.administrator ###################################################
 
