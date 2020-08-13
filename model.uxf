@@ -333,6 +333,21 @@ CaceresBulletin
   <element>
     <id>UMLClass</id>
     <coordinates>
+
+      <x>279</x>
+      <y>594</y>
+      <w>297</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CustomisationParameters
+--
++ spamWords: String {NotBlank,
+                              Pattern("^$|(^[^,]+([,][^,]+)*$)")}
++ spamThreshold: float {Range(0, 100)}
++ activitySectors: String {NotBlank,
+                              Pattern("^$|(^[^,]+([,][^,]+)*$)")}</panel_attributes>
+
       <x>576</x>
       <y>738</y>
       <w>324</w>
@@ -451,6 +466,7 @@ Challenge
 + averageReward: Money {Valid, NotNull}
 + expertGoal: String {NotBlank}
 + expertReward: Money {Valid, NotNull}</panel_attributes>
+
     <additional_attributes/>
   </element>
 </diagram>

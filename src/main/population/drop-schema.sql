@@ -31,6 +31,8 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `customisation_parameters`;
+
     drop table if exists `gonzalez_bulletin`;
 
     drop table if exists `inquirie`;

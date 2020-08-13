@@ -49,6 +49,17 @@
 		<property name="moment" value="2019/12/24 17:45" />
 	</bean>
 	
+
+		<!-- CustomisationParameters -->
+
+	<bean id="customisationParameters01" class="acme.entities.customisationParameters.CustomisationParameters">
+		<property name="spamWords"
+			value="sex,sexo,hard core,viagra,cialis,nigeria,you've won,has ganado,million dollar,millon de dolares,millon de euros" />
+		<property name="spamThreshold" value="2.5" />
+		<property name="activitySectors"
+			value="Technology,Science,Arts,Business,Health" />
+	</bean>
+
 	<!-- Notices -->
 	
 	<bean id="Notice1" class="acme.entities.notices.Notice">
@@ -196,4 +207,5 @@
 		<property name="stars" value="-3" />
 	</bean>
 	
+
 	</beans>
