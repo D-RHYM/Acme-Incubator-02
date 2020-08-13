@@ -62,6 +62,9 @@ master.menu.authenticated.list-overture = List Overtures
 master.menu.authenticated.inquirie = Inquiries
 master.menu.authenticated.list-inquirie = List Inquiries
 
+master.menu.authenticated.challenge = Challenges
+master.menu.authenticated.list-challenge = List Challenges
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

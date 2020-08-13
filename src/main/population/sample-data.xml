@@ -146,4 +146,30 @@
 		<property name="email" value="mercadona@gmail.com"/>
 	</bean>
 	
+	<!-- Challenges -->
+	
+	<bean id="Challenge01" class="acme.entities.challenges.Challenge">
+		<property value="Sport" name="title"/>
+		<property value="2021/01/10 00:00" name="deadline"/>
+		<property value="You must play sport 5 hours in a day. If you don´t play 10 days, the expert goal will be failed. If you don´t play for 25 days, the average goal will be failed." name="description"/>		
+		<property value="Rookie goal 1" name="rookieGoal"/>		
+		<property value="100€" name="rookieReward"/>		
+		<property value="Average goal 1" name="averageGoal"/>		
+		<property value="500€" name="averageReward"/>		
+		<property value="Expert goal 1" name="expertGoal"/>	
+		<property value="1000€" name="expertReward"/>
+	</bean>
+	
+	<bean id="Challenge02" class="acme.entities.challenges.Challenge">
+		<property value="Reading" name="title"/>
+		<property value="2021/02/01 23:30" name="deadline"/>
+		<property value="You have to read 3 Brandon Sanderson´s books. If you read only 1, you will receive the rookie money. If you read 2, then you will receive the average goal. If you read 3, yo will receive the expert goal." name="description"/>		
+		<property value="Rookie goal 2" name="rookieGoal"/>		
+		<property value="100€" name="rookieReward"/>		
+		<property value="Average goal 2" name="averageGoal"/>		
+		<property value="300€" name="averageReward"/>		
+		<property value="Expert goal 2" name="expertGoal"/>	
+		<property value="600€" name="expertReward"/>
+	</bean>
+	
 	</beans>

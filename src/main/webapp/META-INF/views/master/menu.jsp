@@ -58,6 +58,10 @@
 		<acme:menu-option code="master.menu.authenticated.inquirie" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-inquirie" action="/authenticated/inquirie/list"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.challenge" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
