@@ -48,4 +48,34 @@
 		<property name="commentary" value="I found that on YouTube and I like it!" />
 		<property name="moment" value="2019/12/24 17:45" />
 	</bean>
+	
+			<!-- Credit Card -->
+
+	<bean id="creditCard01" class="acme.entities.creditCard.CreditCard">
+		<property name="holderName" value="Fernando" />
+		<property name="creditCardNumber" value="5224746025394443" />
+		<property name="brand" value="Visa" />
+		<property name="creditCardCvv" value="957" />
+		<property name="expirationDate" value="2021/09/14 15:30" />
+	</bean>
+	
+			<!-- Banner -->
+
+		<bean id="banner01" class="acme.entities.banner.Banner">
+		<property name="picture"
+			value="https://i.imgur.com/NGLSjk6.png" />
+		<property name="slogan" value="EjemploBanner" />
+			<property name="targetURL" value="http://example4.com" />
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
+	
+		<bean id="banner02" class="acme.entities.banner.Banner">
+		<property name="picture"
+			value="https://i.imgur.com/2eVF1HG.png" />
+		<property name="slogan" value="EjemploCBanner2" />
+		<property name="targetURL" value="http://example2.com" />
+		<property name="creditCard">
+			<null />
+		</property>
+	</bean>
 	</beans>
