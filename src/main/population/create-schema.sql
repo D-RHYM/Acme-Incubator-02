@@ -40,6 +40,24 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `average_goal` varchar(255),
+        `average_reward_amount` double precision,
+        `average_reward_currency` varchar(255),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `expert_goal` varchar(255),
+        `expert_reward_amount` double precision,
+        `expert_reward_currency` varchar(255),
+        `rookie_goal` varchar(255),
+        `rookie_reward_amount` double precision,
+        `rookie_reward_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -49,6 +67,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+
     create table `credit_card` (
        `id` integer not null,
         `version` integer not null,
@@ -57,6 +76,14 @@
         `credit_card_number` varchar(255),
         `expiration_date` datetime(6),
         `holder_name` varchar(255),
+
+    create table `customisation_parameters` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sectors` varchar(255),
+        `spam_threshold` float not null,
+        `spam_words` varchar(255),
+
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -70,12 +97,82 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `inquirie` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_date` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `notice` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `header_picture` varchar(255),
+        `links` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `overture` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `moment` datetime(6),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tech_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sector` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` varchar(255),
+        `inventor_name` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
+        `web_site` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tool_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` varchar(255),
+        `inventor` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
+        `web` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

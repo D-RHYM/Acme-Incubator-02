@@ -22,7 +22,7 @@
 	<version>2.0</version>
 	<packaging>war</packaging>
 
-	<name>acme-incubator</name>
+	<name>Acme-Incubator</name>
 
 	<description>This is the Acme Incubator Project for the students of Design &amp; Testing.</description>
 
