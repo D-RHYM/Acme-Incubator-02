@@ -42,6 +42,35 @@ master.menu.anonymous.favourite-link-2 = Enlace favorito de Alejandro
 
 master.menu.anonymous.favourite-link = Enlace favorito
 
+master.menu.anonymous.notice = Noticias
+master.menu.anonymous.list-notice = Listar noticias
+
+master.menu.anonymous.techRecord = Registro de tecnologia
+master.menu.anonymous.list-techRecord = Listar registros de tecnologia
+
+master.menu.anonymous.tool-record = Registro de herramientas
+master.menu.anonymous.list-tool-record = Listar registros de herramientas
+
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated.notice = Noticias
+master.menu.authenticated.list-notice = Listar noticias
+
+master.menu.authenticated.techRecord = Registro de tecnologia
+master.menu.authenticated.list-techRecord = Listar registros de tecnologia
+
+master.menu.authenticated.overture = Oberturas
+master.menu.authenticated.list-overture = Listar oberturas
+
+master.menu.authenticated.inquirie = Peticiones
+master.menu.authenticated.list-inquirie = Listar peticiones
+
+master.menu.authenticated.challenge = Desafios
+master.menu.authenticated.list-challenge = Listar desafios
+
+master.menu.authenticated.tool-record = Registro de herramientas
+master.menu.authenticated.list-tool-record = Listar registros de herramientas
 
 # master.menu.administrator ###################################################
 
@@ -49,6 +78,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.list-customisation-parameters = Listar parámetros de personalización
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+
+master.menu.administrator.list-notice = Listar noticias
 
 # master.menu.provider ########################################################
 

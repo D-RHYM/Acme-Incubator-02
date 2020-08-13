@@ -49,6 +49,7 @@
 		<property name="moment" value="2019/12/24 17:45" />
 	</bean>
 	
+
 		<!-- CustomisationParameters -->
 
 	<bean id="customisationParameters01" class="acme.entities.customisationParameters.CustomisationParameters">
@@ -58,4 +59,153 @@
 		<property name="activitySectors"
 			value="Technology,Science,Arts,Business,Health" />
 	</bean>
+
+	<!-- Notices -->
+	
+	<bean id="Notice1" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://www.pinterest.es/pin/413768284513851403/"/>
+		<property name="title" value="Notice 1"/>
+		<property name="creationMoment" value="2020/08/01 20:00"/>
+		<property name="deadline" value="2021/02/01 23:00"/>
+		<property name="body" value="TS Online Marketing. An Oklahoma City Company"/>
+		<property name="links" value=""/>
+	</bean>
+	
+	<bean id="Notice2" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://www.pinterest.es/pin/556194622730273652/"/>
+		<property name="title" value="Notice 2"/>
+		<property name="creationMoment" value="2020/06/01 20:00"/>
+		<property name="deadline" value="2020/07/14 21:30"/>
+		<property name="body" value="Gesunde Eiscreme: 2 Zutaten ohne Zucker"/>
+		<property name="links" value=""/>
+	</bean>
+	
+	<!-- TechnologyRecords -->
+	
+	<bean id="TechRecord1" class="acme.entities.techRecords.TechRecord">
+		<property name="title" value="Youtube"/>
+		<property name="activitySector" value="Video"/>
+		<property name="inventorName" value="Yawed Karim"/>
+		<property name="description" value="Video platform"/>
+		<property name="webSite" value="https://www.youtube.com/"/>
+		<property name="email" value="email1@gmail.com"/>
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="-4"/>
+	</bean>
+	<bean id="TechRecord2" class="acme.entities.techRecords.TechRecord">
+		<property name="title" value="Twitch"/>
+		<property name="activitySector" value="Video"/>
+		<property name="inventorName" value="Emmett Shear"/>
+		<property name="description" value="Video and Streaming platform"/>
+		<property name="webSite" value="https://www.twitch.com/"/>
+		<property name="email" value="email2@gmail.com"/>
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="3"/>
+	</bean>
+	<bean id="TechRecord3" class="acme.entities.techRecords.TechRecord">
+		<property name="title" value="Twitter"/>
+		<property name="activitySector" value="Text messages"/>
+		<property name="inventorName" value="Jack Dorsey"/>
+		<property name="description" value="Social Network to share messages"/>
+		<property name="webSite" value="https://www.twitter.com/"/>
+		<property name="email" value="email3@gmail.com"/>
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="5"/>
+	</bean>
+	
+	<!-- Overtures -->
+	
+	<bean id="Overture1" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 1" />
+		<property name="moment" value="2020/04/14 14:00" />
+		<property name="deadline" value="2021/02/10 12:00" />
+		<property name="description" value="Description of Overture 1" />
+		<property name="email" value="overture1@gmail.com" />
+		<property name="minMoney" value="50.0€" />
+		<property name="maxMoney" value="100.0€" />
+	</bean>
+	
+	<bean id="Overture2" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 2" />
+		<property name="moment" value="2019/11/18 15:30" />
+		<property name="deadline" value="2020/12/16 20:00" />
+		<property name="description" value="Description of Overture 2" />
+		<property name="email" value="overture2@gmail.com" />
+		<property name="minMoney" value="500.0€" />
+		<property name="maxMoney" value="1000.0€" />
+	</bean>
+	
+	<!-- Inquires -->
+	
+	<bean id="Inquirie1" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="Coronavirus vaccine"/>
+		<property name="creationDate" value="2020/03/24 10:30"/>
+		<property name="deadline" value="2022/01/01 01:00"/>
+		<property name="description" value="We need the vaccine against Coronavirus to play Volleyball. Help us donating to the cause."/>
+		<property name="minMoney" value="400.00€"/>
+		<property name="maxMoney" value="10000.00€"/>
+		<property name="email" value="alex9951.a@gmail.com"/>
+	</bean>
+	
+	<bean id="Inquirie2" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="Toilet paper"/>
+		<property name="creationDate" value="2020/04/10 13:00"/>
+		<property name="deadline" value="2020/12/01 12:00"/>
+		<property name="description" value="The people is buying toilet paper and is a total chaos, so help donating us to put more in the supermarkets."/>
+		<property name="minMoney" value="50.00€"/>
+		<property name="maxMoney" value="200.00€"/>
+		<property name="email" value="mercadona@gmail.com"/>
+	</bean>
+	
+	<!-- Challenges -->
+	
+	<bean id="Challenge01" class="acme.entities.challenges.Challenge">
+		<property value="Sport" name="title"/>
+		<property value="2021/01/10 00:00" name="deadline"/>
+		<property value="You must play sport 5 hours in a day. If you don´t play 10 days, the expert goal will be failed. If you don´t play for 25 days, the average goal will be failed." name="description"/>		
+		<property value="You stopped the excercise time for 25 days or more." name="rookieGoal"/>		
+		<property value="100€" name="rookieReward"/>		
+		<property value="You stopped the excercise time for 10 days or more." name="averageGoal"/>		
+		<property value="500€" name="averageReward"/>		
+		<property value="You didn´t stop the excercise." name="expertGoal"/>	
+		<property value="1000€" name="expertReward"/>
+	</bean>
+	
+	<bean id="Challenge02" class="acme.entities.challenges.Challenge">
+		<property value="Reading" name="title"/>
+		<property value="2021/02/01 23:30" name="deadline"/>
+		<property value="You have to read 3 Brandon Sanderson´s books. If you read only 1, you will receive the rookie money. If you read 2, then you will receive the average goal. If you read 3, you will receive the expert goal." name="description"/>		
+		<property value="Read 1 book." name="rookieGoal"/>		
+		<property value="100€" name="rookieReward"/>		
+		<property value="Read 2 books." name="averageGoal"/>	
+		<property value="300€" name="averageReward"/>		
+		<property value="Read 3 books." name="expertGoal"/>	
+		<property value="600€" name="expertReward"/>
+	</bean>
+	
+	<!-- Tool Records -->
+	
+	<bean id="ToolRecord1" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 1" />
+		<property name="sector" value="Sector 1" />
+		<property name="inventor" value="Alejandro Gonzalez" />
+		<property name="description" value="Tool record from Alejandro Gonzalez" />
+		<property name="web" value="https://www.alegonmar2.com/" />
+		<property name="email" value="alejandro@gmail.com" />
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="2" />
+	</bean>
+	
+	<bean id="ToolRecord2" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 2" />
+		<property name="sector" value="Sector 2" />
+		<property name="inventor" value="David Caceres" />
+		<property name="description" value="Tool record from David Caceres" />
+		<property name="web" value="https://www.davcacrom.com/" />
+		<property name="email" value="davile@gmail.com" />
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="-3" />
+	</bean>
+	
+
 	</beans>
