@@ -53,6 +53,8 @@ master.menu.anonymous.list-tool-record = List Tool Record
 
 # master.menu.authenticated ###################################################
 
+master.menu.authenticated = Authenticated
+
 master.menu.authenticated.notice = Notices
 master.menu.authenticated.list-notice = List Notices
 
@@ -77,6 +79,8 @@ master.menu.administrator = Administrator
 master.menu.administrator.list-customisation-parameters = List customisation parameters
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+
+master.menu.administrator.dashboard = Dashboard
 
 master.menu.administrator.list-notice = List notices
 

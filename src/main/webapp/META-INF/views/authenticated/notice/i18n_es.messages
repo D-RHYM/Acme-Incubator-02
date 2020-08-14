@@ -3,7 +3,7 @@ authenticated.notice.form.label.title = Titulo
 authenticated.notice.form.label.creationMoment = Momento
 authenticated.notice.form.label.deadline = Fecha límite
 authenticated.notice.form.label.body = Cuerpo
-authenticated.notice.form.label.links = Links
+authenticated.notice.form.label.links = Enlaces
 authenticated.notice.form.button.return = Atras
 
 authenticated.notice.list.label.creationMoment = Momento

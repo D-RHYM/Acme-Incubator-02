@@ -67,7 +67,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-
     create table `credit_card` (
        `id` integer not null,
         `version` integer not null,
@@ -76,6 +75,8 @@
         `credit_card_number` varchar(255),
         `expiration_date` datetime(6),
         `holder_name` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `customisation_parameters` (
        `id` integer not null,
@@ -83,7 +84,6 @@
         `activity_sectors` varchar(255),
         `spam_threshold` float not null,
         `spam_words` varchar(255),
-
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -154,8 +154,8 @@
         `activity_sector` varchar(255),
         `description` varchar(255),
         `email` varchar(255),
-        `indication` varchar(255),
         `inventor_name` varchar(255),
+        `open` bit not null,
         `stars` integer,
         `title` varchar(255),
         `web_site` varchar(255),
@@ -167,8 +167,8 @@
         `version` integer not null,
         `description` varchar(255),
         `email` varchar(255),
-        `indication` varchar(255),
         `inventor` varchar(255),
+        `open` bit not null,
         `sector` varchar(255),
         `stars` integer,
         `title` varchar(255),

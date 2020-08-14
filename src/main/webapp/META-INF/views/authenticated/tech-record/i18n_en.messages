@@ -4,8 +4,8 @@ authenticated.techRecords.form.label.inventorName = Inventor Name:
 authenticated.techRecords.form.label.description = Description:
 authenticated.techRecords.form.label.webSite = Web Site:
 authenticated.techRecords.form.label.email = Email:
-authenticated.techRecords.form.label.indication = Indication:
 authenticated.techRecords.form.label.stars = Stars:
+authenticated.techRecord.form.label.open = Mark if it's open-source (if it's close, don't mark)
 authenticated.techRecords.form.button.return = Return
 
 authenticated.techRecords.list.label.title = Title
