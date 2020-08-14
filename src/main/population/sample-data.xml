@@ -118,7 +118,7 @@
 		<property name="description" value="Video platform"/>
 		<property name="webSite" value="https://www.youtube.com/"/>
 		<property name="email" value="email1@gmail.com"/>
-		<property name="indication" value="closed-source"/>
+		<property name="open" value="true" />
 		<property name="stars" value="-4"/>
 	</bean>
 	<bean id="TechRecord2" class="acme.entities.techRecords.TechRecord">
@@ -128,7 +128,7 @@
 		<property name="description" value="Video and Streaming platform"/>
 		<property name="webSite" value="https://www.twitch.com/"/>
 		<property name="email" value="email2@gmail.com"/>
-		<property name="indication" value="closed-source"/>
+		<property name="open" value="true" />
 		<property name="stars" value="3"/>
 	</bean>
 	<bean id="TechRecord3" class="acme.entities.techRecords.TechRecord">
@@ -138,7 +138,7 @@
 		<property name="description" value="Social Network to share messages"/>
 		<property name="webSite" value="https://www.twitter.com/"/>
 		<property name="email" value="email3@gmail.com"/>
-		<property name="indication" value="open-source"/>
+		<property name="open" value="false" />
 		<property name="stars" value="5"/>
 	</bean>
 	
@@ -164,6 +164,16 @@
 		<property name="maxMoney" value="1000.0€" />
 	</bean>
 	
+		<bean id="Overture3" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 3" />
+		<property name="moment" value="2019/11/18 15:30" />
+		<property name="deadline" value="2020/02/16 20:00" />
+		<property name="description" value="Description of Overture 3" />
+		<property name="email" value="overture3@gmail.com" />
+		<property name="minMoney" value="500.0€" />
+		<property name="maxMoney" value="1000.0€" />
+	</bean>
+	
 	<!-- Inquires -->
 	
 	<bean id="Inquirie1" class="acme.entities.inquiries.Inquirie">
@@ -184,6 +194,16 @@
 		<property name="minMoney" value="50.00€"/>
 		<property name="maxMoney" value="200.00€"/>
 		<property name="email" value="mercadona@gmail.com"/>
+	</bean>
+	
+	<bean id="Inquirie3" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="Cinema queue"/>
+		<property name="creationDate" value="2020/04/10 13:00"/>
+		<property name="deadline" value="2020/02/01 12:00"/>
+		<property name="description" value="The queue for the local cinema is always too noisy. Please, help us keeping silence."/>
+		<property name="minMoney" value="70.00€"/>
+		<property name="maxMoney" value="200.00€"/>
+		<property name="email" value="zonaeste@gmail.com"/>
 	</bean>
 	
 	<!-- Challenges -->
@@ -212,6 +232,17 @@
 		<property value="600€" name="expertReward"/>
 	</bean>
 	
+	<bean id="Challenge03" class="acme.entities.challenges.Challenge">
+		<property value="Draw" name="title"/>
+		<property value="2020/02/01 23:30" name="deadline"/>
+		<property value="You must draw at least three self-portrait in different styles." name="description"/>		
+		<property value="Draw 1 self-protrait." name="rookieGoal"/>		
+		<property value="100€" name="rookieReward"/>		
+		<property value="Draw 2 self-protrait." name="averageGoal"/>	
+		<property value="300€" name="averageReward"/>		
+		<property value="Draw 3 self-protrait." name="expertGoal"/>	
+		<property value="600€" name="expertReward"/>
+	</bean>
 	<!-- Tool Records -->
 	
 	<bean id="ToolRecord1" class="acme.entities.toolRecords.ToolRecord">
@@ -221,7 +252,7 @@
 		<property name="description" value="Tool record from Alejandro Gonzalez" />
 		<property name="web" value="https://www.alegonmar2.com/" />
 		<property name="email" value="alejandro@gmail.com" />
-		<property name="indication" value="open-source"/>
+		<property name="open" value="true" />
 		<property name="stars" value="2" />
 	</bean>
 	
@@ -232,7 +263,7 @@
 		<property name="description" value="Tool record from David Caceres" />
 		<property name="web" value="https://www.davcacrom.com/" />
 		<property name="email" value="davile@gmail.com" />
-		<property name="indication" value="closed-source"/>
+		<property name="open" value="false" />
 		<property name="stars" value="-3" />
 	</bean>
 	

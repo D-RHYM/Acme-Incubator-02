@@ -54,6 +54,8 @@ master.menu.anonymous.list-tool-record = Listar registros de herramientas
 
 # master.menu.authenticated ###################################################
 
+master.menu.authenticated = Autenticado
+
 master.menu.authenticated.notice = Noticias
 master.menu.authenticated.list-notice = Listar noticias
 
@@ -78,6 +80,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.list-customisation-parameters = Listar parámetros de personalización
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+
+master.menu.administrator.dashboard = Panel de control
 
 master.menu.administrator.list-notice = Listar noticias
 

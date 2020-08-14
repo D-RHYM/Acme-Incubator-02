@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedChallengeRepository extends AbstractRepository {
 
-	@Query("Select c from Challenge c where c.deadline > CURRENT_TIMESTAMP")
+	@Query("Select c from Challenge c where c.deadline > current_date()")
 	Collection<Challenge> findMany();
 
 	@Query("Select c from Challenge c where c.id = ?1")

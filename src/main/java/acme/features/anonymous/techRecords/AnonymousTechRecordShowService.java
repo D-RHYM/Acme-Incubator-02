@@ -30,7 +30,7 @@ public class AnonymousTechRecordShowService implements AbstractShowService<Anony
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "activitySector", "inventorName", "description", "webSite", "email", "indication", "stars");
+		request.unbind(entity, model, "title", "activitySector", "inventorName", "description", "webSite", "email", "open", "stars");
 
 	}
 

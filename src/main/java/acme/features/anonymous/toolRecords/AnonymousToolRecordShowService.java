@@ -32,7 +32,7 @@ public class AnonymousToolRecordShowService implements AbstractShowService<Anony
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "sector", "inventor", "description", "web", "email", "indication", "stars");
+		request.unbind(entity, model, "title", "sector", "inventor", "description", "web", "email", "open", "stars");
 
 	}
 

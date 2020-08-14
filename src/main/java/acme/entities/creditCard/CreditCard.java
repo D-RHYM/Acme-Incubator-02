@@ -6,8 +6,8 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
@@ -38,6 +38,6 @@ public class CreditCard extends DomainEntity {
 	private String				creditCardCvv;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Future
+	@NotNull
 	private Date				expirationDate;
 }

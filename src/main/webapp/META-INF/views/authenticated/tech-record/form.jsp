@@ -10,8 +10,8 @@
 	<acme:form-textarea code="authenticated.techRecords.form.label.description" path="description" />
 	<acme:form-url code="authenticated.techRecords.form.label.webSite" path="webSite" />
 	<acme:form-textbox code="authenticated.techRecords.form.label.email" path="email" />
-	<acme:form-textbox code="authenticated.techRecords.form.label.indication" path="indication" />
 	<acme:form-textbox code="authenticated.techRecords.form.label.stars" path="stars" />
+	<acme:form-checkbox code="authenticated.techRecord.form.label.open" path="open" />
 	
 	<acme:form-return code="authenticated.techRecords.form.button.return" />
 </acme:form>
