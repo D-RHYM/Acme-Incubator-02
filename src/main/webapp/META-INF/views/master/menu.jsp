@@ -32,12 +32,42 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="http://www.twitter.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-2" action="/anonymous/gonzalez-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-2" action="/anonymous/gonzalez-bulletin/create" />
-
+	
+	<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>	
+	
+	<acme:menu-separator />	
+			<acme:menu-suboption code="master.menu.anonymous.list-techRecord" action="/anonymous/tech-record/list"/>
+		
+	<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.anonymous.list-tool-record" action="/anonymous/tool-record/list"/>
+			
+</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-notice" action="/authenticated/notice/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-techRecord" action="/authenticated/tech-record/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-overture" action="/authenticated/overture/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-inquirie" action="/authenticated/inquirie/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-tool-record" action="/authenticated/tool-record/list"/>
 		</acme:menu-option>
+		
+		
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
+		
+		<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />
+		<acme:menu-separator/>
+
+			<acme:menu-suboption code="master.menu.administrator.list-customisation-parameters"
+				action="/administrator/customisation-parameters/list" />
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list"/>
+			<acme:menu-separator/>
+			
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
 
@@ -55,6 +85,7 @@
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()"/>
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
+		
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update"/>
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create" access="!hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
